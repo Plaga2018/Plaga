@@ -28,7 +28,7 @@ SECRET_KEY = 'q2lra#ddiscy17p3t-&^m1+ic#xba!6zkyfe-&*d#+vh!%q*ev'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Plaga2018.pythonanywhere.com',]
+ALLOWED_HOSTS = ['Plaga2018.pythonanywhere.com','127.0.0.1']
 
 #testing
 
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learning_users.settings'
+WSGI_APPLICATION = 'learning_users.wsgi.application'
 
 
 # Database
@@ -135,8 +135,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [STATIC_DIR,]
 
 # MEDIA INFORMATION:
 MEDIA_ROOT = MEDIA_DIR
