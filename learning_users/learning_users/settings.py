@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learning_users.wsgi.application'
+WSGI_APPLICATION = 'learning_users.settings'
 
 
 # Database
@@ -137,8 +137,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# STATICFILES_DIRS = [STATIC_DIR,]
+STATICFILES_DIRS = [STATIC_DIR,]
 
 # MEDIA INFORMATION:
 # MEDIA_ROOT = MEDIA_DIR
