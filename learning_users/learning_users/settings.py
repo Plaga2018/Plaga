@@ -16,7 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
-# MEDIA_DIR = os.path.join(BASE_DIR,'media')
+MEDIA_DIR = os.path.join(BASE_DIR,'media')
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,9 +28,8 @@ SECRET_KEY = 'q2lra#ddiscy17p3t-&^m1+ic#xba!6zkyfe-&*d#+vh!%q*ev'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Plaga2018.pythonanywhere.com','127.0.0.1']
+ALLOWED_HOSTS = []
 
-#testing
 
 # Application definition
 
@@ -72,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learning_users.settings'
+WSGI_APPLICATION = 'learning_users.wsgi.application'
 
 
 # Database
@@ -136,11 +135,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [STATIC_DIR,]
 
 # MEDIA INFORMATION:
-# MEDIA_ROOT = MEDIA_DIR
-# MEDIA_URL = '/media/'
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
 
 LOGIN_URL = '/basic_app/user_login/'
