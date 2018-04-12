@@ -28,7 +28,7 @@ SECRET_KEY = 'q2lra#ddiscy17p3t-&^m1+ic#xba!6zkyfe-&*d#+vh!%q*ev'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['plaga2018.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
