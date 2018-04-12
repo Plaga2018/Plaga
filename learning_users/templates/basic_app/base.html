@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <title>Base</title>
     <!-- Latest compiled and minified CSS -->
@@ -13,7 +14,7 @@
         <ul class="nav navbar-nav">
 
           {# Django Home Link / Admin Link / Register Link#}
-          <li><a class="navbar-brand" href="{% url 'index' %}">DJANGO</a></li>
+          <li><a class="navbar-brand" href="{% url 'index' %}">Plaga</a></li>
           <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
           <li><a class="navbar-link" href="{% url 'basic_app:register' %}">Register</a></li>
 
@@ -23,7 +24,7 @@
           {% else %}
             <li><a class="navbar-link" href="{% url 'basic_app:user_login' %}">Login</a></li>
           {% endif %}
-          
+
         </ul>
       </div>
     </nav>
